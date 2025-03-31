@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="app.css">
+        <title>Uyum İhbarnamesi</title>
+</head>
+
+<body>
+    <div class="ui four column doubling stackable grid container">
+        <div class="ui secondary menu">
+            <a href="/isletme-dosyasi/" class="item">
+                İşletme Dosyası
+            </a>
+            <a href="/sertifika/" class="item">
+                Sertifika Oluşturucu
+            </a>
+            <a href="/uyum-raporu/" class="item active">
+                Uyum İhbarnamesi
+            </a>
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="ui form">
+            <div class="ui segment">
+                <h2>Uyum İhbarnamesi</h2>
+                <h4 class="ui dividing header">İşletme Detayları</h4>
+                <div class="field">
+                    <div class="three fields">
+                        <div class="field">
+                            <label>Tarih</label>
+                            <input type="text" name="tarih" placeholder="1 Ocak 2025">
+                        </div>
+                        <div class="field">
+                            <label>İşletme Adı</label>
+                            <input type="text" name="isletmeadi" placeholder="Cevap">
+                        </div>
+                        <div class="field">
+                            <label>İşletme Adresi</label>
+                            <input type="text" name="isletmeadres" placeholder="Numara, Sokak, Bölge, Şehir, Eyalet">
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">Bildiri Detayları</h4>
+                
+                <!-- Yeni eklenen çoklu seçim dropdown -->
+                <div class="field">
+                    <label>İhlal Türleri</label>
+                    <select name="ihlalTurleri" multiple="" class="ui fluid dropdown">
+                        <option value="">İhlal Türlerini Seçin</option>
+                        <option value="temizlik">Temizlik İhlali</option>
+                        <option value="isguvenligi">İş Güvenliği İhlali</option>
+                        <option value="belge">Belge Eksikliği</option>
+                        <option value="calisma">Çalışma Saatleri İhlali</option>
+                        <option value="verg">Vergi İhlali</option>
+                        <option value="diger">Diğer İhlaller</option>
+                    </select>
+                </div>
+                
+                <div class="inline fields">
+                    <label for="field" class="header">İletişim Şekli</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="isekli" checked="" value="E-mail"
+                                tabindex="0" class="hidden">
+                            <label>E-mail</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="isekli" value="Yüzyüze" tabindex="0"
+                                class="hidden">
+                            <label>Yüzyüze</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="isekli"
+                                value="Mektup" tabindex="0" class="hidden">
+                            <label>Mektup</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="three fields">
+                        <div class="field">
+                            <label>İhlal Tarihi ve Saati</label>
+                            <input type="text" name="ihlaltarih" placeholder="GG/AA/YYYY - 00:00">
+                        </div>
+                        <div class="field">
+                            <label>Olayın Tanımı:</label>
+                            <input type="text" name="olaytanimi" placeholder="Cevap">
+                        </div>
+                        <div class="field">
+                            <label>İlgili Memur</label>
+                            <input type="text" name="ilgilimemur" placeholder="Eulalie Wu">
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">Kanıt</h4>
+                <div class="field">
+                    <div class="one field">
+                        <div class="field">
+                            <label>İşletmeyi bilgilendirdiğinize dair kanıt</label>
+                            <input type="text" name="kanit" placeholder="Uyum bildiriminin ekran görüntüsü (işletme sahibine e-posta, mektup kanıtı [takip numarası]) eklenecektir.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Rapor Çıktısı</h2>
+                <div class="field">
+                    <label>Çıktı</label>
+                    <textarea id="output" readonly></textarea>
+                </div>
+                <div class="ui secondary button" id="submit">Gönder</div>
+                <div class="ui primary button" id="copy">Panoya Kopyala</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            // Dropdown'ı başlat
+            $('.ui.dropdown').dropdown();
+            
+            // Diğer JavaScript kodlarınız...
+        });
+    </script>
+</body>
+
+</html>

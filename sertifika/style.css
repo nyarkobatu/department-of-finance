@@ -1,0 +1,174 @@
+/* Genel stil */
+.inline.fields .header {
+    width: 250px !important;
+}
+
+.status.fields .header {
+    width: 150px !important;
+}
+
+.ui.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #fff;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.4285em;
+    color: rgba(0, 0, 0, .87);
+    font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    /* Başlığı ortala */
+    margin-top: 20px;
+    /* Başlığı üstten biraz aşağı it */
+    width: 100%;
+    /* Başlığın genişliğini tam yap */
+    position: static;
+    /* Sabit kalmasını engelle */
+}
+
+/* Form stil */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Sertifika konteyneri */
+.certificate-container {
+    margin-top: 20px;
+    display: none;
+    justify-self: center;
+}
+
+canvas {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    max-width: 100%;
+    width: 800px;
+    /* Tarayıcıda görüntülenen boyut */
+    height: auto;
+    /* Oranları koru */
+}
+
+/* İndirme butonu */
+.download-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+.download-button:hover {
+    background-color: #219653;
+}
+
+/* Responsive tasarım */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    button[type="submit"] {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .download-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('fonts/calibri-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('fonts/calibri-light.ttf') format('truetype');
+    font-weight: 300;
+    /* Light */
+    font-style: normal;
+}

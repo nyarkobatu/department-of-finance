@@ -1,0 +1,12 @@
+.ui.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.inline.fields .header {
+    width: 250px !important;
+}
+
+.body {
+    background-color: #0000;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://i.imgur.com/t0neFei.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <title>İfade Raporu</title>
+</head>
+<body>
+    <div class="ui four column doubling stackable grid container">
+        <div class="ui secondary  menu">
+            <a href="/lssdraporlar/ihlal-raporu"class="item">
+              İhlal Raporu
+            </a>
+            <a href="/lssdraporlar/elkoyma-raporu"class="item">
+              El Koyma Raporu
+            </a>
+            <a href="/lssdraporlar/ifade-raporu" class="item">
+                İfade Raporu
+              </a>
+              <a href="/lssdraporlar/olay-raporu" class="item active">
+                  Olay Raporu
+                </a>
+                                              <a href="lssdkartvizit/" class="item">
+                  Kartvizit Oluşturucu
+                </a>
+                <a href="/lssdraporlar/isletme-dosyasi/" class="item">
+                    İşletme Dosyası
+                  </a>
+          </div>
+        </div>
+    <div class="ui container">
+        <div class="ui form">
+            <div class="ui segment">
+                <h2>Temel Bilgiler</h2>
+                <h4 class="ui dividing header">Personel Bilgileri</h4>
+                <div class="field">
+                    <div class="five fields">
+                        <div class="field">
+                            <label>İsim ve Soyisim</label>
+                            <input type="text" name="isimsoyisim" placeholder="İsim Soyisim">
+                        </div>
+                        <div class="field">
+                            <label>Çalışan NO</label>
+                            <input type="text" name="rozetnumarasi" placeholder="Rozet Numaran">
+                        </div>
+                        <div class="field">
+                            <label>Çağrı Kodu</label>
+                            <input type="text" name="cagrikodu" placeholder="Çağrı Kodu">
+                        </div>
+                        <div class="field">
+                            <label>Tarih</label>
+                            <input type="text" name="tarih" placeholder="Tarih">
+                        </div>
+                        <div class="field">
+                            <label>Rapor NO</label>
+                            <input type="text" name="raporno" placeholder="Rapor Numarası1">
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">Olay Türü</h4>
+                    <div class="inline fields">
+                        <label for="field1" class="header">Olay Türü Seçin:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field1" checked="" value="[size=85][cbc] Araç Takibi[color=#FFFFFF]___[/color][cb] Silahlı Saldırı[color=#FFFFFF]___[/color][cb] Cinayet[color=#FFFFFF]___[/color][cb] Çete Bağlantılı[color=#FFFFFF]___[/color][cb] Hırsızlık[color=#FFFFFF]___[/color][cb] Trafik Kazası[color=#FFFFFF]___[/color][cb] Diğer[color=#FFFFFF]___[/color][/tdwidth][/size]" tabindex="0" class="hidden">
+                                <label>Araç Takibi</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field1" value="[size=85][cb] Araç Takibi[color=#FFFFFF]___[/color][cbc] Silahlı Saldırı[color=#FFFFFF]___[/color][cb] Cinayet[color=#FFFFFF]___[/color][cb] Çete Bağlantılı[color=#FFFFFF]___[/color][cb] Hırsızlık[color=#FFFFFF]___[/color][cb] Trafik Kazası[color=#FFFFFF]___[/color][cb] Diğer[color=#FFFFFF]___[/color][/tdwidth][/size]" tabindex="0" class="hidden">
+                                <label>Silahlı Saldırı</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field1" value="[size=85][cb] Araç Takibi[color=#FFFFFF]___[/color][cb] Silahlı Saldırı[color=#FFFFFF]___[/color][cbc] Cinayet[color=#FFFFFF]___[/color][cb] Çete Bağlantılı[color=#FFFFFF]___[/color][cb] Hırsızlık[color=#FFFFFF]___[/color][cb] Trafik Kazası[color=#FFFFFF]___[/color][cb] Diğer[color=#FFFFFF]___[/color][/tdwidth][/size]" tabindex="0" class="hidden">
+                                <label>Cinayet</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field1" value="[size=85][cb] Araç Takibi[color=#FFFFFF]___[/color][cb] Silahlı Saldırı[color=#FFFFFF]___[/color][cb] Cinayet[color=#FFFFFF]___[/color][cbc] Çete Bağlantılı[color=#FFFFFF]___[/color][cb] Hırsızlık[color=#FFFFFF]___[/color][cb] Trafik Kazası[color=#FFFFFF]___[/color][cb] Diğer[color=#FFFFFF]___[/color][/tdwidth][/size]" tabindex="0" class="hidden">
+                                <label>Çete Bağlantılı</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field1" value="[size=85][cb] Araç Takibi[color=#FFFFFF]___[/color][cb] Silahlı Saldırı[color=#FFFFFF]___[/color][cb] Cinayet[color=#FFFFFF]___[/color][cb] Çete Bağlantılı[color=#FFFFFF]___[/color][cbc] Hırsızlık[color=#FFFFFF]___[/color][cb] Trafik Kazası[color=#FFFFFF]___[/color][cb] Diğer[color=#FFFFFF]___[/color][/tdwidth][/size]" tabindex="0" class="hidden">
+                                <label>Hırsızlık</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field1" value="[size=85][cb] Araç Takibi[color=#FFFFFF]___[/color][cb] Silahlı Saldırı[color=#FFFFFF]___[/color][cb] Cinayet[color=#FFFFFF]___[/color][cb] Çete Bağlantılı[color=#FFFFFF]___[/color][cb] Hırsızlık[color=#FFFFFF]___[/color][cbc] Trafik Kazası[color=#FFFFFF]___[/color][cb] Diğer[color=#FFFFFF]___[/color][/tdwidth][/size]" tabindex="0" class="hidden">
+                                <label>Trafik Kazası</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field1" value="[size=85][cb] Araç Takibi[color=#FFFFFF]___[/color][cb] Silahlı Saldırı[color=#FFFFFF]___[/color][cb] Cinayet[color=#FFFFFF]___[/color][cb] Çete Bağlantılı[color=#FFFFFF]___[/color][cb] Hırsızlık[color=#FFFFFF]___[/color][cb] Trafik Kazası[color=#FFFFFF]___[/color][cbc] Diğer[color=#FFFFFF]___[/color][/tdwidth][/size]" tabindex="0" class="hidden">
+                                <label>Diğer</label>
+                            </div>
+                        </div>
+                    </div>
+                <h4 class="ui dividing header">İFADE BİLGİLERİ</h4>
+                <div class="field">
+                    <div class="five fields">
+                        <div class="field">
+                            <label>İfadeyi Verenin İsmi</label>
+                            <input type="text" name="ifadeisimsoyisim" placeholder="İsim Soyisim">
+                        </div>
+                        <div class="field">
+                            <label>İfade Konumu</label>
+                            <input type="text" name="ifadekonum" placeholder="İfade Konumu">
+                        </div>
+                        <div class="field">
+                            <label>İfade Tarihi</label>
+                            <input type="text" name="ifadetarih" placeholder="İfade Tarihi">
+                        </div>
+                        <div class="field">
+                            <label>İfadeyi Verenin İletişim Bilgileri</label>
+                            <input type="text" name="ifadeiletisim" placeholder="Telefon Numarası">
+                        </div>
+                        <div class="field">
+                            <label>İfadeyi Verenin İkahmet Adresi</label>
+                            <input type="text" name="ifadeikametgah" placeholder="İkamet Adresi">
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label for="field2" class="header">Mağdur Cinsiyeti:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field2" checked="" value="[cbc] Erkek[color=#FFFFFF]___[/color][/size][size=85][cb] Kadın[/size]" tabindex="0" class="hidden">
+                                <label>Erkek</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="field2" value="[cb] Erkek[color=#FFFFFF]___[/color][/size][size=85][cbc] Kadın[/size]" tabindex="0" class="hidden">
+                                <label>Kadın</label>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Detaylar</h2>
+                <div class="field">
+                    <label>Detaylar</label>
+                    <textarea name="ifadedetaylari" placeholder="Üçüncü ağızdan detaylıca olayı anlatın."></textarea>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Rapor Çıktısı</h2>
+            <div class="field">
+                <label>Çıktı</label>
+                <textarea id="output" readonly></textarea>
+            </div>
+            <div class="ui secondary button" id="submit">Gönder</div>
+            <div class="ui primary button" id="copy">Panoya Kopyala</div>
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="dosya.js"></script>
+</body>
+</html>

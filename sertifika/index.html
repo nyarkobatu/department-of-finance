@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sertifika Oluşturucu</title>
+</head>
+
+<body>
+    <div class="ui four column doubling stackable grid container">
+        <div class="ui secondary menu">
+            <a href="/isletme-dosyasi/" class="item">
+                İşletme Dosyası
+            </a>
+            <a href="/sertifika/" class="item active">
+                Sertifika Oluşturucu
+            </a>
+            <a href="/uyum-raporu/" class="item">
+                Uyum Raporu
+            </a>
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="ui form">
+
+            <form id="certificateForm" class="ui segment">
+                <h2>Sertifika Oluşturucu</h2>
+                <div class="field">
+                    <div class="four fields">
+                        <div class="field">
+                            <label for="name">İşletme Adı:</label>
+                            <input type="text" id="name" name="name" required placeholder="İşletmenin tam adını girin">
+                        </div>
+                        <div class="field">
+                            <label for="name">İşletme Hesap ID:</label>
+                            <input type="text" id="hID" name="hID" required placeholder="İşletmenin hesap ID'si">
+                        </div>
+                        <div class="field">
+                            <label for="date">Tarih:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="field">
+                            <button type="submit" style="margin-top: 1.8rem;">Sertifika Oluştur</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+        <div class="certificate-container">
+            <canvas id="certificateCanvas" width="2000" height="1628"></canvas>
+
+        </div>
+        <button id="downloadButton" class="download-button">Sertifikayı İndir</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

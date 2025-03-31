@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <title>İşletme Dosyası</title>
+</head>
+
+<body>
+    <div class="ui four column doubling stackable grid container">
+        <div class="ui secondary menu">
+            <a href="/isletme-dosyasi/" class="item active">
+                İşletme Dosyası
+            </a>
+            <a href="/sertifika/" class="item">
+                Sertifika Oluşturucu
+            </a>
+            <a href="/uyum-raporu/" class="item">
+                Uyum Raporu
+            </a>
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="ui form">
+            <div class="ui segment">
+                <h2>İşletme Dosyası</h2>
+                <h4 class="ui dividing header">İşletme Detayları</h4>
+                <div class="inline fields">
+                    <label for="field" class="header">Durum:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox for status">
+                            <input type="radio" name="field2" checked="" value="[color=#008040]Aktif[/color]"
+                                tabindex="0" class="hidden">
+                            <label>Aktif</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox for status">
+                            <input type="radio" name="field2" value="[color=#FF8000]Feshedilmiş[/color]" tabindex="0"
+                                class="hidden">
+                            <label>Feshedilmiş</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox for status">
+                            <input type="radio" name="field2"
+                                value="[color=#BF0000]Kayıt Defterinden Kaldırıldı[/color]" tabindex="0" class="hidden">
+                            <label>Kayıt Defterinden Kaldırıldı</label>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="field">
+                    <div class="four fields">
+                        <div class="field">
+                            <label>İşletme Hesap ID</label>
+                            <input type="text" name="isletmehesapid" placeholder="Numara/Ay/Yıl">
+                        </div>
+                        <div class="field">
+                            <label>Kayıt Tarihi</label>
+                            <input type="text" name="kayittarihi" placeholder="GG/AA/YYYY">
+                        </div>
+                        <div class="field">
+                            <label>Önceki İşletme Adları</label>
+                            <input type="text" name="exisletmeadi" placeholder="Cevap">
+                        </div>
+                        <div class="field">
+                            <label>Önceki İşletme Adresleri</label>
+                            <input type="text" name="exisletmeadres" placeholder="Cevap">
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <label for="field1" class="header">Sahiplik Durumu:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field3" checked="" value="Kiralık" tabindex="0" class="hidden">
+                            <label>Kiralık</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="field3" value="Sahipli" tabindex="0" class="hidden">
+                            <label>Sahipli</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="three fields">
+                        <div class="field">
+                            <label>((Önceki İşletme Sahibi İsimleri))</label>
+                            <input type="text" name="exisletmesahibi" placeholder="((Sadece NC Attığında))">
+                        </div>
+                        <div class="field">
+                            <label>İşletme Başvurusu Linki</label>
+                            <input type="text" name="basvurulink" placeholder="Cevap">
+                        </div>
+                        <div class="field">
+                            <label>İlgili Finans Memuru</label>
+                            <input type="text" name="finansmemuru" placeholder="Eulalie Wu">
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">İşletme Bilgileri</h4>
+                <div class="field">
+                    <div class="five fields">
+                        <div class="field">
+                            <label>İşletme Adı</label>
+                            <input type="text" name="isletmeadi" placeholder="Cevap">
+                        </div>
+                        <div class="field">
+                            <label>İşletme Takma Adı/Adları</label>
+                            <input type="text" name="isletmenickname" placeholder="Cevap">
+                        </div>
+                        <div class="field">
+                            <label>İşletme Sahibi</label>
+                            <input type="text" name="isletmesahibi" placeholder="Cevap">
+                        </div>
+                        <div class="field">
+                            <label>İşletme Adresi</label>
+                            <input type="text" name="isletmeadres" placeholder="Cevap">
+                        </div>
+                        <div class="field">
+                            <label>İşletme Sahibi Telefonu:</label>
+                            <input type="text" name="telefon" placeholder="Cevap">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="one field">
+                        <div class="field">
+                            <label>Faaliyet Alanları</label>
+                            <input type="text" name="faaliyet" placeholder="Cevap">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="one field">
+                        <div class="field">
+                            <label>İşletme Özeti</label>
+                            <textarea name="isletmeozeti"
+                                placeholder="İşletme hakkında yüzeysel detayları belirtin."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">EK BİLGİLER</h4>
+                <div class="field">
+                    <div class="one field">
+                        <div class="field">
+                            <label>Eklemek istediğiniz ek bir şey bulunuyor mu?</label>
+                            <input type="text" name="ekbilgi" placeholder="N/A">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <h2>Rapor Çıktısı</h2>
+                <div class="field">
+                    <label>Çıktı</label>
+                    <textarea id="output" readonly></textarea>
+                </div>
+                <div class="ui secondary button" id="submit">Gönder</div>
+                <div class="ui primary button" id="copy">Panoya Kopyala</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="appguncel.js"></script>
+</body>
+
+</html>

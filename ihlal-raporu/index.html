@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <title>El Koyma Raporu</title>
+</head>
+<body>
+    <div class="ui four column doubling stackable grid container">
+        <div class="ui secondary  menu">
+            <a href="/lssdraporlar/ihlal-raporu"class="item">
+              İhlal Raporu
+            </a>
+            <a href="/lssdraporlar/elkoyma-raporu"class="item">
+              El Koyma Raporu
+            </a>
+            <a href="/lssdraporlar/ifade-raporu" class="item">
+                İfade Raporu
+              </a>
+              <a href="/lssdraporlar/olay-raporu" class="item active">
+                  Olay Raporu
+                </a>
+                                              <a href="lssdkartvizit/" class="item">
+                  Kartvizit Oluşturucu
+                </a>
+                <a href="/lssdraporlar/isletme-dosyasi/" class="item">
+                    İşletme Dosyası
+                  </a>
+          </div>
+        </div>
+    <div class="ui four column doubling stackable grid container">
+        <div class="ui form">
+            <div class="ui segment">
+                <h2>El Koyma Raporu</h2>
+                <h4 class="ui dividing header">Personel Bilgileri</h4>
+                <div class="field">
+                    <div class="four fields">
+                        <div class="field">
+                            <label>İsim Soyisim</label>
+                            <input type="text" name="isimsoyisim" placeholder="İsim Soyisim">
+                        </div>
+                        <div class="field">
+                            <label>Rozet Kodu</label>
+                            <input type="text" name="rozetkodu" placeholder="Rozet Numarası">
+                        </div>
+                        <div class="field">
+                            <label>Çağrı Kodu</label>
+                            <input type="text" name="cagrikodu" placeholder="Çağrı Kodu">
+                        </div>
+                        <div class="field">
+                            <label>Tarih ve Konum</label>
+                            <input type="text" name="tarih" placeholder="GG/AA/YYY - 00:00">
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">İhlal Bilgisi</h4>
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>İhlal Tarihi</label>
+                            <input type="text" name="ihlaltarihi" placeholder="GG/AA/YYYY - 00:00">
+                        </div>
+                        <div class="field">
+                            <label>İhlal Kodları</label>
+                            <input type="text" name="ihlalkodlari" placeholder="İhlal Kodları">
+                        </div>
+                    </div>
+                </div>
+                <h4 class="ui dividing header">Araç Bilgisi</h4>
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Marka ve Model</label>
+                            <input type="text" name="markamodel" placeholder="Marka ve Model">
+                        </div>
+                        <div class="field">
+                            <label>Renk</label>
+                            <input type="text" name="renk" placeholder="Renk">
+                        </div>
+                        <div class="field">
+                            <label>Plaka</label>
+                            <input type="text" name="plaka" placeholder="Plaka">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Olayı detaylıca açıklayın.</label>
+                    <textarea id="detayliaciklama" name="rapor" placeholder="Üçüncü ağızdan raporu doldurun."></textarea>
+                </div>
+            </div>
+            
+                <h2>Rapor Çıktısı</h2>
+                <p>Raporun çıktısını almak için şablonun başındaki ## ve sonundaki ## işaretlerini mouse imleciniz ile tutup kopyalayın ve foruma yapıştırın.</p>
+            <div class="field">
+                <div id="output" readonly></div>
+            </div>
+            <div class="ui secondary button" id="submit">Şablonu Al</div>
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
