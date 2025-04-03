@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
         integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="app.css">
-        <title>Uyum İhbarnamesi</title>
+    <link rel="stylesheet" href="app.css">
+    <title>Uyum İhbarnamesi</title>
 </head>
 
 <body>
@@ -21,7 +21,10 @@
             <a href="/sertifika/" class="item">
                 Sertifika Oluşturucu
             </a>
-            <a href="/uyum-raporu/" class="item active">
+            <a href="/uyum-raporu/" class="item">
+                Uyum İhbarnamesi Raporu
+            </a>
+            <a href="/uyum-ihbarnamesi/" class="item active">
                 Uyum İhbarnamesi
             </a>
         </div>
@@ -48,69 +51,22 @@
                     </div>
                 </div>
                 <h4 class="ui dividing header">Bildiri Detayları</h4>
-                
-                <!-- Yeni eklenen çoklu seçim dropdown -->
                 <div class="field">
                     <label>İhlal Türleri</label>
                     <select name="ihlalTurleri" multiple="" class="ui fluid dropdown">
                         <option value="">İhlal Türlerini Seçin</option>
-                        <option value="temizlik">Temizlik İhlali</option>
-                        <option value="isguvenligi">İş Güvenliği İhlali</option>
-                        <option value="belge">Belge Eksikliği</option>
-                        <option value="calisma">Çalışma Saatleri İhlali</option>
-                        <option value="verg">Vergi İhlali</option>
-                        <option value="diger">Diğer İhlaller</option>
+                        <option value="işletme kaydı yapmama">Kayıt Yapmama</option>
+                        <option value="lisanssız bir şekilde işletme faaliyeti yürütmek">Lisanssız İşletme Faaliyeti</option>
+                        <option value="işletme lisansının ihlali">İşletme Lisansının İhlali</option>
+                        <option value="başarısız işletme denetlemesi">Başarısız İşletme İncelemesi</option>
+                        <option value="tahsil edilen ücreti ödememe">Tahsil Edilen Ücreti Ödememe</option>
+                        <option value="belediye fonlarının hatalı kullanımı">Belediye Fonlarının Hatalı Kullanımı</option>
+                        <option value="bilgi vermekte başarısızlık">Bilgi Vermekte Başarısızlık</option>
+                        <option value="yanlış bilgi sağlama">Yanlış Bilgi Sağlama</option>
+                        <option value="aldatıcı veya yanlış reklam yapmak">Aldatıcı veya Yanlış Reklam Yapma</option>
+                        <option value="arka plan uygulamaları">Arka Plan Uygulamaları</option>
+                        <option value="BDRB uygunsuzluğu">BDRB Uygunsuzluğu</option>
                     </select>
-                </div>
-                
-                <div class="inline fields">
-                    <label for="field" class="header">İletişim Şekli</label>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="isekli" checked="" value="E-mail"
-                                tabindex="0" class="hidden">
-                            <label>E-mail</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="isekli" value="Yüzyüze" tabindex="0"
-                                class="hidden">
-                            <label>Yüzyüze</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="isekli"
-                                value="Mektup" tabindex="0" class="hidden">
-                            <label>Mektup</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="three fields">
-                        <div class="field">
-                            <label>İhlal Tarihi ve Saati</label>
-                            <input type="text" name="ihlaltarih" placeholder="GG/AA/YYYY - 00:00">
-                        </div>
-                        <div class="field">
-                            <label>Olayın Tanımı:</label>
-                            <input type="text" name="olaytanimi" placeholder="Cevap">
-                        </div>
-                        <div class="field">
-                            <label>İlgili Memur</label>
-                            <input type="text" name="ilgilimemur" placeholder="Eulalie Wu">
-                        </div>
-                    </div>
-                </div>
-                <h4 class="ui dividing header">Kanıt</h4>
-                <div class="field">
-                    <div class="one field">
-                        <div class="field">
-                            <label>İşletmeyi bilgilendirdiğinize dair kanıt</label>
-                            <input type="text" name="kanit" placeholder="Uyum bildiriminin ekran görüntüsü (işletme sahibine e-posta, mektup kanıtı [takip numarası]) eklenecektir.">
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="ui segment">
@@ -121,22 +77,78 @@
                 </div>
                 <div class="ui secondary button" id="submit">Gönder</div>
                 <div class="ui primary button" id="copy">Panoya Kopyala</div>
+                <!-- <div class="ui green button" id="downloadPdf">PDF Olarak İndir</div> -->
+                <div class="ui teal button" id="downloadPng">PNG Olarak İndir</div>
+                <div class="ui orange button" id="previewPng">PNG Önizle</div>
+                    <div id="preview-container" style="margin-top: 20px; text-align: center; display: none;">
+                    <h4>PNG Önizleme</h4>
+                    <img id="png-preview" style="max-width: 100%; border: 1px solid #ddd; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Hidden div for rendering the document -->
+    <div id="document" style="position: absolute; left: -9999px; width: 210mm; height: 297mm; padding: 20mm; font-family: Arial, sans-serif;"></div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
         integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(document).ready(function() {
-            // Dropdown'ı başlat
-            $('.ui.dropdown').dropdown();
-            
-            // Diğer JavaScript kodlarınız...
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="appguncel.js"></script>
 </body>
-
+<!-- Hidden template for PNG export -->
+<div id="png-template" style="display: none; width: 210mm; padding: 20mm; font-family: 'Times New Roman', serif; background-color: white; position: absolute; left: -9999px;">
+    <!-- Top Logo - Centered -->
+    <div style="text-align: center; margin-bottom: 15px;">
+        <img src="/images/govlogo.png" style="width: 80px; height: 80px; display: block; margin: 0 auto;">
+    </div>
+    
+    <!-- Header with underline and address -->
+    <div style="text-align: right; margin-bottom: 25px;">
+        <hr style="border: none; border-top: 1px solid black; margin: 5px 0;">
+        <div style="color: #5597D0; text-decoration: underline; font-size: 9pt; line-height: 1.3; text-align: right;">
+            CITY OF LOS SANTOS<br>
+            DEPARTMENT OF FINANCE<br>
+            CARCER WAY I, ROCKFORD HILLS, LOS SANTOS, SA
+        </div>
+    </div>
+    
+    <!-- Date -->
+    <div id="png-date" style="font-size: 11pt;"></div>
+    
+    <!-- Business Info -->
+    <div id="png-business" style="margin-top: 8px; font-size: 11pt;"></div>
+    
+    <!-- Title -->
+    <div style="font-weight: bold; margin: 20px 0 15px 0; font-size: 12pt; text-align: center;">UYUM İHBARNAMESİ</div>
+    
+    <!-- Main Content -->
+    <div id="png-content" style="text-align: justify; font-size: 11pt; line-height: 1.5;"></div>
+    
+    <!-- Signature Section -->
+    <div style="margin-top: 40px;">
+        <!-- Signature Image -->
+        <div style="text-align: left; margin-bottom: 10px;">
+            <img src="/images/oliverimza.png" style="width: 180px; height: auto;">
+        </div>
+        
+        <!-- Signature Text -->
+        <div style="color: #5597D0; text-align: left;">
+            <div style="font-size: 12.5pt; font-weight: bold;">Oliver Calhoun</div>
+            <div style="font-size: 9pt;">
+                Director of Finance<br>
+                E-mail: o.calhoun@lsgov.us
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Line -->
+    <div style="margin-top: 30px;">
+        <hr style="border: none; border-top: 1px solid black;">
+    </div>
+</div>
 </html>

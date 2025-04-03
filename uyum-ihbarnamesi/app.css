@@ -10,3 +10,121 @@
 .status.fields .header {
     width: 150px !important;
 }
+
+#document {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 12pt;
+}
+
+#output {
+    min-height: 300px;
+    font-family: monospace;
+}
+
+.ui.button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #document, #document * {
+        visibility: visible;
+    }
+    #document {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* PNG Template Styles */
+#png-template {
+    line-height: 1.5;
+    font-size: 12pt;
+}
+
+#png-template ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+#png-template li {
+    margin-bottom: 5px;
+}
+
+#png-template hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+
+#png-template a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* PNG Template Styles */
+#png-template {
+    line-height: 1.5;
+    font-size: 12pt;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#png-template img {
+    max-width: 100%;
+    height: auto;
+}
+
+#png-template ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+#png-template li {
+    margin-bottom: 8px;
+}
+
+#png-template hr {
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 15px 0;
+}
+
+#png-template a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* PNG Preview Styles */
+#previewPng {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#preview-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+#png-preview {
+    max-height: 800px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #png-preview {
+        max-height: 500px;
+    }
+}
