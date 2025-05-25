@@ -22,7 +22,7 @@ $('#submit').click(function () {
 [b]2.4 İlgili Memur: [/b] ${$('input[name="ilgilimemur"]').val()}[hr][/hr][/list]
 
 [br][/br][color=#535a6c][size=150][b]III. EK BİLGİLER[/b][/size][/color][hr][/hr][list=none]
-[b]3.1 İşletmeyi bilgilendirdiğinize dair kanıt:[/b] ${$('input[name="kanit"]').val()}[hr][/hr][/list]`
+[b]3.1 İşletmeyi bilgilendirdiğinize dair kanıt:[/b] ${$('input[name="kanit"]').val()} [hr][/hr][/list]`
 
     $('#output').val(output);
 });

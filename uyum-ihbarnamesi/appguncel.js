@@ -55,11 +55,11 @@ ${$('input[name="isletmeadres"]').val()}
 [br][/br][justify]Bu mektup, Department of Finance'in yukarıda belirtilen tarihte yukarıda atıfta bulunulan işletmenin [b]${violationsText}[/b] hususlarını ihlal ettiğini tespit ettiği resmi Uyum İhbarnamesi olarak hizmet edecektir.
 
 Department of Finance bu vesileyle size düzeltici önlemler almanızı emretmektedir. Yukarıda açıklanan ihlal, bu bildirimin tarihinden itibaren yedi (7) gün içinde ele alınmalıdır. İhlalin düzeltilmesi üzerine, bundan sonra da uyumu sürdürmeniz gerekmektedir. Bu mektupta belirtilen süre içinde uymamanız durumunda, City, İşletme Tüzüğü uyarınca aşağıdaki yaptırımları uygulayabilir:
-[br][/br][list][*] B.C.06.§1(a) uyarınca mali para cezası uygulayabilir.
-[br][/br][*]B.C.06.§1(b) uyarınca işletme ruhsat(lar)ınızı askıya alabilir.
-[br][/br][*]B.C.06.§1(c) uyarınca işletme ruhsat(lar)ınızı iptal edebilir.
-[br][/br][*]B.C.06.§1(d) uyarınca yürütmeyi durdurma emri çıkartabilir.
-[br][/br][*]B.C.06.§1(e) uyarınca işletmeyi işletme kayıt defterinden kaldırabilir.[/list]
+[br][/br][list][*] B.C.06.§4(a) uyarınca mali para cezası uygulayabilir.
+[br][/br][*]B.C.06.§4(b) uyarınca işletme ruhsat(lar)ınızı askıya alabilir.
+[br][/br][*]B.C.06.§4(c) uyarınca işletme ruhsat(lar)ınızı iptal edebilir.
+[br][/br][*]B.C.06.§4(d) uyarınca yürütmeyi durdurma emri çıkartabilir.
+[br][/br][*]B.C.06.§4(e) uyarınca işletmeyi işletme kayıt defterinden kaldırabilir.[/list]
 
 
 Bu bildirimin tarihinden itibaren yedi (7) gün içinde yazılı bir itiraz talebinde bulunarak bu uyum ihbarnamesine itiraz etmek için İşletme Uyuşmazlıkları Çözüm Kurulu nezdinde idari duruşma talep edebilirsiniz. Söz konusu talep, adınızı, adresinizi, telefon numaranızı, bu bildirimin referansını ve bu bildirimde atıfta bulunulan işletmenin kişisel bilgilerini içermelidir. 
@@ -147,11 +147,11 @@ $('#downloadPng').click(function() {
       Department of Finance bu vesileyle size düzeltici önlemler almanızı emretmektedir. Yukarıda açıklanan ihlal, bu bildirimin tarihinden itibaren yedi (7) gün içinde ele alınmalıdır. İhlalin düzeltilmesi üzerine, bundan sonra da uyumu sürdürmeniz gerekmektedir. Bu mektupta belirtilen süre içinde uymamanız durumunda, City, İşletme Tüzüğü uyarınca aşağıdaki yaptırımları uygulayabilir:
       <br><br>
       <ul style="margin-left: 20px; padding-left: 20px;">
-          <li style="margin-bottom: 8px;">B.C.06.§1(a) uyarınca mali para cezası uygulayabilir.</li>
-          <li style="margin-bottom: 8px;">B.C.06.§1(b) uyarınca işletme ruhsat(lar)ınızı askıya alabilir.</li>
-          <li style="margin-bottom: 8px;">B.C.06.§1(c) uyarınca işletme ruhsat(lar)ınızı iptal edebilir.</li>
-          <li style="margin-bottom: 8px;">B.C.06.§1(d) uyarınca yürütmeyi durdurma emri çıkartabilir.</li>
-          <li style="margin-bottom: 8px;">B.C.06.§1(e) uyarınca işletmeyi işletme kayıt defterinden kaldırabilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(a) uyarınca mali para cezası uygulayabilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(b) uyarınca işletme ruhsat(lar)ınızı askıya alabilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(c) uyarınca işletme ruhsat(lar)ınızı iptal edebilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(d) uyarınca yürütmeyi durdurma emri çıkartabilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(e) uyarınca işletmeyi işletme kayıt defterinden kaldırabilir.</li>
       </ul>
       <br>
       Bu bildirimin tarihinden itibaren yedi (7) gün içinde yazılı bir itiraz talebinde bulunarak bu uyum ihbarnamesine itiraz etmek için İşletme Uyuşmazlıkları Çözüm Kurulu nezdinde idari duruşma talep edebilirsiniz. Söz konusu talep, adınızı, adresinizi, telefon numaranızı, bu bildirimin referansını ve bu bildirimde atıfta bulunulan işletmenin kişisel bilgilerini içermelidir.
@@ -223,11 +223,11 @@ $('#previewPng').click(function() {
       Department of Finance bu vesileyle size düzeltici önlemler almanızı emretmektedir. Yukarıda açıklanan ihlal, bu bildirimin tarihinden itibaren yedi (7) gün içinde ele alınmalıdır. İhlalin düzeltilmesi üzerine, bundan sonra da uyumu sürdürmeniz gerekmektedir. Bu mektupta belirtilen süre içinde uymamanız durumunda, City, İşletme Tüzüğü uyarınca aşağıdaki yaptırımları uygulayabilir:
       <br><br>
       <ul style="margin-left: 20px; padding-left: 20px;">
-          <li style="margin-bottom: 8px;">B.C.06.§1(a) uyarınca mali para cezası uygulayabilir.</li>
-          <li style="margin-bottom: 8px;">B.C.06.§1(b) uyarınca işletme ruhsat(lar)ınızı askıya alabilir.</li>
-          <li style="margin-bottom: 8px;">B.C.06.§1(c) uyarınca işletme ruhsat(lar)ınızı iptal edebilir.</li>
-          <li style="margin-bottom: 8px;">B.C.06.§1(d) uyarınca yürütmeyi durdurma emri çıkartabilir.</li>
-          <li style="margin-bottom: 8px;">B.C.06.§1(e) uyarınca işletmeyi işletme kayıt defterinden kaldırabilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(a) uyarınca mali para cezası uygulayabilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(b) uyarınca işletme ruhsat(lar)ınızı askıya alabilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(c) uyarınca işletme ruhsat(lar)ınızı iptal edebilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(d) uyarınca yürütmeyi durdurma emri çıkartabilir.</li>
+          <li style="margin-bottom: 8px;">B.C.06.§4(e) uyarınca işletmeyi işletme kayıt defterinden kaldırabilir.</li>
       </ul>
       <br>
       Bu bildirimin tarihinden itibaren yedi (7) gün içinde yazılı bir itiraz talebinde bulunarak bu uyum ihbarnamesine itiraz etmek için İşletme Uyuşmazlıkları Çözüm Kurulu nezdinde idari duruşma talep edebilirsiniz. Söz konusu talep, adınızı, adresinizi, telefon numaranızı, bu bildirimin referansını ve bu bildirimde atıfta bulunulan işletmenin kişisel bilgilerini içermelidir.
